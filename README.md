@@ -80,5 +80,9 @@ Head to `Settings > Secrets and variables > Actions` for your GH repository and 
 | SERVER_APP_DIRECTORY | smth like `/opt/your_app_name`      |
 | DOCKER_REGISTRY     |  URL of your docker registry on Digital ocean (smth like `registry.digitalocean.com/YOUR_REGISTRY_NAME`) |
 | DOCKER_IMAGE        | name for you application's docker image |
-| DIGITALOCEAN_ACCESS_TOKEN | Digital ocean access token - needs at least registry access rights, get it [here](https://cloud.digitalocean.com/account/api/tokens) looks smth like `dop_v1_XXXXXXXX`|
+| DIGITALOCEAN_ACCESS_TOKEN | Digital ocean access token - needs at least `registry` and `image` scopes, get it [here](https://cloud.digitalocean.com/account/api/tokens) looks smth like `dop_v1_XXXXXXXX`|
 | PRODUCTION_DOT_ENV | `.env` style file content for your application specific env vars (can start with `FOO=bar` for now) |
+
+## Credits
+
+[Full CI/CD with Docker + GitHub Actions + DigitalOcean (Droplets + Container Registry)](https://faun.pub/full-ci-cd-with-docker-github-actions-digitalocean-droplets-container-registry-db2938db8246)
