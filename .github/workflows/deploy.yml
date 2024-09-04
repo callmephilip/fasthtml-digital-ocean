@@ -9,6 +9,7 @@ env:
   PRODUCTION_DOT_ENV: ${{ secrets.PRODUCTION_DOT_ENV }}
   SERVER_APP_DIRECTORY: ${{ secrets.SERVER_APP_DIRECTORY }}
   DIGITALOCEAN_ACCESS_TOKEN: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+  HOST_URL: ${{ secrets.HOST_URL }}
 jobs:
   build-and-push:
     name: Build image and push to DO registry
@@ -76,7 +77,7 @@ jobs:
           username: root
           key: ${{ secrets.SSHKEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-          envs: SERVER_APP_DIRECTORY,IMAGE_NAME,REGISTRY,DIGITALOCEAN_ACCESS_TOKEN,GITHUB_SHA,PRODUCTION_DOT_ENV,IMAGE_TAG
+          envs: SERVER_APP_DIRECTORY,IMAGE_NAME,REGISTRY,DIGITALOCEAN_ACCESS_TOKEN,GITHUB_SHA,PRODUCTION_DOT_ENV,IMAGE_TAG,HOST_URL
           script: |
             # Login to registry
             docker login -u $(echo DIGITALOCEAN_ACCESS_TOKEN) -p $(echo DIGITALOCEAN_ACCESS_TOKEN) registry.digitalocean.com

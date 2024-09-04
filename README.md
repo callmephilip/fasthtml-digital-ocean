@@ -89,4 +89,5 @@ Head to `Settings > Secrets and variables > Actions` for your GH repository and 
 
 ## Credits
 
-[Full CI/CD with Docker + GitHub Actions + DigitalOcean (Droplets + Container Registry)](https://faun.pub/full-ci-cd-with-docker-github-actions-digitalocean-droplets-container-registry-db2938db8246)
+- [SWAG](https://github.com/linuxserver/docker-swag)
+- [Full CI/CD with Docker + GitHub Actions + DigitalOcean (Droplets + Container Registry)](https://faun.pub/full-ci-cd-with-docker-github-actions-digitalocean-droplets-container-registry-db2938db8246)
