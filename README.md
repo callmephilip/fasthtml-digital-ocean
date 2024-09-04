@@ -76,7 +76,7 @@ Head to `Settings > Secrets and variables > Actions` for your GH repository and 
 | PASSPHRASE         | Passphrase used when running ssh-keygen |
 | HOST_IP            | IP address of your droplet |
 | HOST_URL           | Your app URL (e.g. `fasthtml.com` )   |
-| HEALTH_CHECK_URL   | e.g. https://fasthtml.com/healthcheck`|
+| HEALTH_CHECK_URL   | e.g. `https://fasthtml.com/healthcheck`|
 | SERVER_APP_DIRECTORY | smth like `/opt/your_app_name`      |
 | DOCKER_REGISTRY     |  URL of your docker registry on Digital ocean (smth like `registry.digitalocean.com/YOUR_REGISTRY_NAME`) |
 | DOCKER_IMAGE        | name for you application's docker image |

@@ -2,7 +2,7 @@
 name = "fasthtml-digital-ocean"
 version = "0.1.0"
 description = ""
-authors = ["You 👈  <you@gmail.com>"]
+authors = ["John Smith <john@example.com>"]
 readme = "README.md"
 packages = [{include = "fasthtml_digital_ocean"}]
 
