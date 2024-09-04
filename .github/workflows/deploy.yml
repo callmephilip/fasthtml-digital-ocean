@@ -82,10 +82,14 @@ jobs:
             docker login -u $(echo DIGITALOCEAN_ACCESS_TOKEN) -p $(echo DIGITALOCEAN_ACCESS_TOKEN) registry.digitalocean.com
 
             # Stop running container
-            docker stop $(echo $IMAGE_NAME)
-
+            if [ "$(docker ps -q -f name=$(echo $IMAGE_NAME))" ]; then
+              docker stop $(echo $IMAGE_NAME)
+            fi
+              
             # Remove old container
-            docker rm $(echo $IMAGE_NAME)
+            if [ "$(docker ps -aq -f status=exited -f name=$(echo $IMAGE_NAME))" ]; then
+              docker rm $(echo $IMAGE_NAME)
+            fi
 
             # set up directories for the app
             if [ ! -d "$(echo $SERVER_APP_DIRECTORY)" ]; then
