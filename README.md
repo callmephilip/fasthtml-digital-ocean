@@ -44,8 +44,12 @@ docker compose up
 ```
 - navigate to your domain (e.g. https://fasthtml.com) and make sure you see SWAG welcome message `Welcome to your SWAG instance`
 - stop the container (Ctrl+C)
-- clean up `rm docker-compose.yml`
+- clean up
 
+```bash
+rm docker-compose.yml
+docker rm swag
+```
 
 ## Github 
 
